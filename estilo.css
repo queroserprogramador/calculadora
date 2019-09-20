@@ -1,0 +1,19 @@
+#calculadora {
+    width: 270px;
+}
+
+#botoes {
+    grid: 30px;
+}
+
+#tela {
+    border: 1px solid #ccc;
+    width: 265px;
+    height: 30px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+}
