@@ -8,8 +8,11 @@
 
 #tela {
     border: 1px solid #ccc;
-    width: 265px;
+    width: 235px;
     height: 30px;
+    padding: 10px;
+    font-size: 28px;
+    overflow: scroll;
 }
 
 button {
