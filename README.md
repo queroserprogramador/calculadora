@@ -1,7 +1,7 @@
 Calculadora QSP
 ========
 
-![](./video.mp4)
+![](./video.gif)
 
 #### Tecnologias usadas
 * Javascript 
