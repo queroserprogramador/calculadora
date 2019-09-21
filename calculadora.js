@@ -12,13 +12,13 @@ function digitoParaString(digito) {
 
 function atualizaTela(valor) {
     var tela = document.getElementById("tela");
-    valorTela = `${valorTela}${valor}`;
-    tela.innerText = valorTela;
+    valorTela = valor;
+    tela.innerText = valor;
 }
 
 function botaoDigitoClick (e) {
     var digito = e.target.value;
-    atualizaTela(digito);
+    atualizaTela(`${valorTela}${digito}`);
 }
 
 function rodarAcao (acao) {
@@ -42,19 +42,25 @@ function rodarAcao (acao) {
             resultado = Number(valorAntigoTela) * Number(valorTela);
         }
 
-        valorTela = ""
+        valorAntigoTela = ""
         atualizaTela(resultado)
         return
     }
 
-    valorAntigoTela = valorTela;
-    valorTela = ""
-    acaoEscolhida = acao;
-    limparTela()
+    if (acao === "l") {
+        location.reload();
+    }
+
+    if (acao === "+" | acao === "-" | acao === "*" | acao === "/") {
+        valorAntigoTela = valorTela;
+        acaoEscolhida = acao;
+        limparTela() 
+    }
 }
 
 function limparTela () {
     var tela = document.getElementById("tela");
+    valorTela = ""
     tela.innerText = ""
 }
 
