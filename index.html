@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=100px, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="estilo.css" rel="stylesheet" />
-    <script src="calculadora.js" ></script>
     <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="calculadora.js" ></script>    
 </head>
 <body>
     <div id="calculadora">
-        <div>
+        <h1 class="logo">CASIO</h1>
+        <div id="header">
             <div id="tela"></div>
         </div>
         <div id="botoes">
             <div>
-                <button class="botaoDigito" value="1">1</button>
-                <button class="botaoDigito" value="2">2</button>
-                <button class="botaoDigito" value="3">3</button>
-                <button class="botaoAcao" value="l">Limpar</button>
+                <button class="botaoDigito" value="7">7</button>
+                <button class="botaoDigito" value="8">8</button>
+                <button class="botaoDigito" value="9">9</button>
+                <button class="botaoAcao" value="c">C</button>
             </div>
             <div>
                 <button class="botaoDigito" value="4">4</button>
@@ -28,17 +31,17 @@
                 
             </div>
             <div>
-                <button class="botaoDigito" value="7">7</button>
-                <button class="botaoDigito" value="8">8</button>
-                <button class="botaoDigito" value="9">9</button>
+                <button class="botaoDigito" value="1">1</button>
+                <button class="botaoDigito" value="2">2</button>
+                <button class="botaoDigito" value="3">3</button>
                 <button class="botaoAcao" value="-">-</button>
             </div>
             <div>
-                <button class="botaoDigito" value="0">0</button> 
-                <button class="botaoAcao" value="/">/</button>
+                <button class="botaoAcao" value="/">/</button> 
+                <button class="botaoDigito" value="0">0</button>
                 
-                <button class="botaoAcao" value="*">*</button>
-                <button class="botaoAcao" value="=">=</button>
+                <button class="botaoAcao" value="x">X</button>
+                <button class="botaoAcao igual" value="=">=</button>
             </div>
             
         </div>
