@@ -1,22 +1,61 @@
+body {
+    background: #181818;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #calculadora {
-    width: 270px;
+    width: 213px;
+    margin: 200px auto;
+    background: #2F2F2F;
+    border: 3px solid #000;
+    border-radius: 15px;
+    padding: 0px 15px 15px 15px;    
+}
+
+.logo {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#header {
+    max-width: 212px;
+}
+
+#tela {
+    max-width: 212px;
+    height: 70px;
+    background: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    padding: 5px 0 0 10px;
 }
 
 #botoes {
     grid: 30px;
 }
 
-#tela {
-    border: 1px solid #ccc;
-    width: 235px;
-    height: 30px;
-    padding: 10px;
-    font-size: 28px;
-    overflow: scroll;
+button {
+    width: 50px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    background: #fff;
+    margin-top: 3px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #11AD42;
 }
 
-button {
-    width: 60px;
-    height: 60px;
-    margin-top: 5px;
+.botaoAcao {
+    color: #E05D44;
+    background: #E7E7E7;
+}
+
+.igual {
+    color: #fff;
+    background: #E05D44;
 }

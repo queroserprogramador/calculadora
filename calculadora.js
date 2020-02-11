@@ -1,6 +1,6 @@
-var valorAntigoTela = "" // o que foi mostrado na tela antes de escolher a operacao
+var valorAntigoTela = ""; // o que foi mostrado na tela antes de escolher a operacao
 var valorTela = ""; // o que está sendo mostrado na tela no momento
-var acaoEscolhida; // a açao escolhida 
+var acaoEscolhida; // a açao escolhida
 
 function atualizaTela(valor) {
     var tela = document.getElementById("tela");
@@ -35,7 +35,7 @@ function rodarAcao (acao) {
         }
 
 
-        if (acaoEscolhida === "*") {
+        if (acaoEscolhida === "x") {
             resultado = parseInt(valorAntigoTela) * parseInt(valorTela);
         }
 
@@ -45,7 +45,7 @@ function rodarAcao (acao) {
         return
     }
 
-    if (acao === "l") {
+    if (acao === "c") {
         location.reload();
     }
 
