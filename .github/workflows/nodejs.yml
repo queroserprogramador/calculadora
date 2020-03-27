@@ -25,5 +25,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-    - run: npm run start & bg
+    - run: npm run start &
     - run: ./node_modules/cypress/bin/cypress run 
