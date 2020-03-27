@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+        "http-server": "0.12.1"
+    },
+    "devDependencies": {
+        "cypress": "4.2.0"
+    },
+    "scripts" : {
+        "start" :  "http-server ./ --port=5001 -c-1",
+        "tests" : "cypress open"
+    }
+}

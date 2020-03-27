@@ -6,6 +6,14 @@ function atualizaTela(valor) {
     var tela = document.getElementById("tela");
     valorTela = valor;
     tela.innerText = valorTela;
+
+    if (valorTela != "" && valorAntigoTela != "" && acaoEscolhida != "") {
+         document.getElementById("botaoIgual").removeAttribute("disabled")
+
+        return
+    }
+
+    document.getElementById("botaoIgual").setAttribute("disabled", "disabled")
 }
 
 function botaoDigitoClick (e) {
@@ -17,6 +25,8 @@ function botaoAcaoClick (e) {
     var acao = e.target.value;
     rodarAcao(acao);
 }
+
+
 
 function rodarAcao (acao) {
     if (acao === "=") {
