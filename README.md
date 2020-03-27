@@ -1,4 +1,4 @@
-Calculadora QSP
+Calculadora QSP ![Tests](https://github.com/queroserprogramador/calculadora/workflows/Tests/badge.svg)
 ========
 
 ![](./video.gif)
